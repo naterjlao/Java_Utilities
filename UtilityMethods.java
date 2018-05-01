@@ -6,6 +6,12 @@ package util;
  * @author Nathaniel Lao
  */
 public class UtilityMethods {
+
+    /**
+     * Runtime exception that can thrown in unimplemented methods.
+     */
+    public static RuntimeException UNIMPLEMENTED = new RuntimeException("Unimplemented exception thrown in " + getMethodName());
+
     /**
      * This will create an exception and generate a stack trace. From this trace, the method finds the method name of
      * the method calling this method. Therefore, whenever this method is called, it returns the method name of the
